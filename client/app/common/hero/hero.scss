@@ -1,0 +1,32 @@
+@import '../common';
+.page-header {
+    h1 {
+        font-size: 4em;
+    }
+}
+#banner {
+    min-height: 300px;
+    border-bottom: none;
+}
+.sponsor {
+    #carbonads {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+    .carbon-text {
+        display: block;
+        margin-top: 1em;
+        font-size: 12px;
+    }
+    .carbon-poweredby {
+        float: right;
+        margin-top: 1em;
+        font-size: 10px;
+    }
+}
+@media (max-width: 767px) {
+    #banner {
+        margin-bottom: 2em;
+        text-align: center;
+    }
+}

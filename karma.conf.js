@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function (config) {
   config.set({
     // base path used to resolve all patterns
@@ -14,12 +16,12 @@ module.exports = function (config) {
     exclude: [],
 
     plugins: [
-      require("karma-chai"),
-      require("karma-phantomjs-launcher"),
-      require("karma-mocha"),
-      require("karma-mocha-reporter"),
-      require("karma-sourcemap-loader"),
-      require("karma-webpack")
+      require('karma-chai'),
+      require('karma-phantomjs-launcher'),
+      require('karma-mocha'),
+      require('karma-mocha-reporter'),
+      require('karma-sourcemap-loader'),
+      require('karma-webpack')
     ],
 
     // preprocess matching files before serving them to the browser
@@ -32,7 +34,7 @@ module.exports = function (config) {
         loaders: [
           { test: /\.js/, exclude: [/app\/lib/, /node_modules/], loader: 'babel' },
           { test: /\.html/, loader: 'raw' },
-          { test: /\.styl$/, loader: 'style!css!stylus' },
+          { test: /\.scss$/, loader: 'style!css!sass' },
           { test: /\.css$/, loader: 'style!css' }
         ]
       }

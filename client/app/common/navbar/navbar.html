@@ -1,8 +1,38 @@
-<nav class="navbar">
-  <div class="logo">
-    <h1><a ui-sref="home">{{ vm.name }}</a></h1>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">AngularJS & Bootswatch</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="" id="components">Components <span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="components">
+            <li><a href="#">Header</a></li>
+            <li class="divider"></li>
+            <li><a href="#navbar">Navbar</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#navs">Navs</a></li>
+            <li><a href="#indicators">Indicators</a></li>
+            <li><a href="#progress-bars">Progress bars</a></li>
+            <li><a href="#containers">Containers</a></li>
+            <li><a href="#dialogs">Dialogs</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://desenvolvedor.expert/" target="_blank">{ desenvolvedor.expert(); }</a></li>
+      </ul>
+
+    </div>
   </div>
-  <div class="nav-links">
-    <span><a ui-sref="about">about</a></span>
-  </div>
-</nav>
+</div>

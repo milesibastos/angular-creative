@@ -1,3 +1,5 @@
+'use strict';
+
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import Common from './common/common';
@@ -11,10 +13,10 @@ angular.module('app', [
     Components.name
   ])
   .config(($locationProvider) => {
-    "ngInject";
+    'ngInject';
     // @see: https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions
     // #how-to-configure-your-server-to-work-with-html5mode
     $locationProvider.html5Mode(true).hashPrefix('!');
   })
 
-  .component('app', AppComponent);
+.component('app', AppComponent);
