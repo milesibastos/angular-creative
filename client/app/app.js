@@ -5,10 +5,13 @@ import uiRouter from 'angular-ui-router';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
-import 'normalize.css';
+import angulartics from 'angulartics';
+import angularticsGoogle from 'angulartics-google-analytics';
 
 angular.module('app', [
     uiRouter,
+    angulartics,
+    angularticsGoogle,
     Common.name,
     Components.name
   ])
