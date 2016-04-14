@@ -8,6 +8,7 @@ import template from 'gulp-template';
 import yargs    from 'yargs';
 import gutil    from 'gulp-util';
 import serve    from 'browser-sync';
+import shell    from 'gulp-shell';
 import webpackDevMiddelware from 'webpack-dev-middleware';
 import webpachHotMiddelware from 'webpack-hot-middleware';
 import colorsSupported      from 'supports-color';
@@ -108,5 +109,16 @@ gulp.task('component', () => {
     }))
     .pipe(gulp.dest(destPath));
 });
+
+gulp.task('deploy', shell.task([
+  'echo "\!dist/" >> .gitignore',
+  'git add dist',
+  'git commit -nam "PUBLISH"',
+  'git subtree split --prefix dist -b gh-pages',
+  'git push origin gh-pages:gh-pages --force',
+  'git branch -D gh-pages',
+  'git reset HEAD~1',
+  'git checkout -- .gitignore'
+]));
 
 gulp.task('default', ['serve']);
