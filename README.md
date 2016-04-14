@@ -1,12 +1,4 @@
-<p align="center">
-  <a href="https://angularclass.com" target="_blank">
-    <img src="https://cloud.githubusercontent.com/assets/1016365/9864650/93a5660a-5b00-11e5-8716-a0d538d12913.png" alt="ng6-starter" width="480px;" >
-  </a>
-  <!-- old img url: http://res.cloudinary.com/angularclass/image/upload/v1431802814/ng6_vrmd60.png -->
-</p>
-
-# NG6 [![Join Slack](https://img.shields.io/badge/slack-join-brightgreen.svg)](https://angularclass.com/slack-join) [![Join the chat at https://gitter.im/angularclass/NG6-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angularclass/NG6-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
+# Angular Bootstrap [![Gitter](https://badges.gitter.im/desenvolvedorexpert/angular-bootstrap.svg)](https://gitter.im/desenvolvedorexpert/angular-bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 > The de facto starter repo for building scalable apps with [Angular](https://angularjs.org), [ES6](https://git.io/es6features), and [Webpack](http://webpack.github.io/)
 
 This repo serves as a minimal starter for those looking to get up-and-running with Angular and ES6, using [Gulp](http://gulpjs.com/) and [Webpack](http://webpack.github.io/) for the build process.
@@ -15,11 +7,8 @@ This repo serves as a minimal starter for those looking to get up-and-running wi
 * A ready-to-go build system for working with [ES6](https://git.io/es6features)
 * Tasks for generating additional boilerplate Angular components
 * A full testing system in place
-* [Stylus](https://learnboost.github.io/stylus/) support
+* [Sass](http://sass-lang.com) support
 
-**Check out the [JSPM version](https://github.com/angularclass/NG6-starter/tree/jspm)--an alternative to Webpack as an ES6 build system.**
-
-> If you're looking for a preliminary [Angular 2](https://angular.io/) build, please use the [angular2-webpack-starter](https://github.com/angularclass/angular2-webpack-starter).
 ___
 
 # Table of Contents
@@ -38,7 +27,7 @@ ___
 
 # Walkthrough
 ## Build System
-NG6 uses Gulp and Webpack together for its build system. Yes, you don't need Gulp if you're using Webpack. This is true if your build system is only responsible for file manipulation. However, ours is not.
+We use Gulp and Webpack together for its build system. Yes, you don't need Gulp if you're using Webpack. This is true if your build system is only responsible for file manipulation. However, ours is not.
 
 `Webpack` handles all file-related concerns:
 * Transpiling from ES6 to ES5 with `Babel`
@@ -55,10 +44,8 @@ NG6 uses Gulp and Webpack together for its build system. Yes, you don't need Gul
 * Starting a development server (yes, Webpack can do this too)
 * Generating boilerplate for the Angular app
 
-**Check out the [JSPM version](https://github.com/angularclass/NG6-starter/tree/jspm)--an alternative to Webpack as an ES6 build system.**
-
 ## File Structure
-We use a componentized approach with NG6. This will be the eventual standard (and particularly helpful, if using Angular's new router) as well as a great way to ensure a tasteful transition to Angular 2, when the time is ripe. Everything--or mostly everything, as we'll explore (below)--is a component. A component is a self-contained concern--may it be a feature or strictly-defined, ever-present element of the UI (such as a header, sidebar, or footer). Also characteristic of a component is that it harnesses its own stylesheets, templates, controllers, routes, services, and specs. This encapsulation allows us the comfort of isolation and structural locality. Here's how it looks:
+We use a componentized approach. This will be the eventual standard (and particularly helpful, if using Angular's new router) as well as a great way to ensure a tasteful transition to Angular 2, when the time is ripe. Everything--or mostly everything, as we'll explore (below)--is a component. A component is a self-contained concern--may it be a feature or strictly-defined, ever-present element of the UI (such as a header, sidebar, or footer). Also characteristic of a component is that it harnesses its own stylesheets, templates, controllers, routes, services, and specs. This encapsulation allows us the comfort of isolation and structural locality. Here's how it looks:
 ```
 client
 ⋅⋅app/
@@ -99,7 +86,7 @@ Once you have these, install the following as globals:
 * `npm install` to install dependencies
 
 ## Running the App
-NG6 uses Gulp to build and launch the development environment. After you have installed all dependencies, you may run the app. Running `gulp` will bundle the app with `webpack`, launch a development server, and watch all files. The port will be displayed in the terminal.
+We use Gulp to build and launch the development environment. After you have installed all dependencies, you may run the app. Running `gulp` will bundle the app with `webpack`, launch a development server, and watch all files. The port will be displayed in the terminal.
 
 ### Gulp Tasks
 Here's a list of available tasks:
@@ -153,19 +140,15 @@ Running `gulp component --name footer --parent ../common` creates a `footer` com
 
 Because the argument to `--name` applies to the folder name **and** the actual component name, make sure to camelcase the component names.
 
+# Thanks for @AngularClass
+> Looking for the [original project](https://github.com/AngularClass/NG6-starter)?
+
 # Starter Kit Support and Questions
 > Contact us, anytime, regarding anything about this project.
 
-* [Gitter: angularclass/NG6-starter](https://gitter.im/angularclass/NG6-starter)
-* [Twitter: @AngularClass](https://twitter.com/AngularClass)
+* [Gitter: desenvolvedorexpert/angular-bootstrap](https://gitter.im/desenvolvedorexpert/angular-bootstrap?utm_source=github&utm_medium=master&utm_content=link)
+* [Twitter: @milesibastos](https://twitter.com/milesibastos)
 
 ___
 
-enjoy — **AngularClass**
-
-<br><br>
-
-[![AngularClass](https://cloud.githubusercontent.com/assets/1016365/9863770/cb0620fc-5af7-11e5-89df-d4b0b2cdfc43.png  "Angular Class")](https://angularclass.com)
-##[AngularClass](https://angularclass.com)
-> Learn AngularJS, Angular 2, and Modern Web Development from the best.
-> Looking for corporate Angular training, want to host us, or Angular consulting? scott@angularclass.com
+enjoy — **desenvolvedor.expert**
