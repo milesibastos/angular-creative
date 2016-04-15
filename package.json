@@ -1,7 +1,7 @@
 {
-  "name": "ng6-starter",
+  "name": "angular-bootstrap",
   "version": "0.0.1",
-  "description": "Starter for Angular + ES6 + (Webpack or JSPM)",
+  "description": "Starter for Angular + ES6 + Webpack & Bootstrap",
   "main": "index.js",
   "dependencies": {
     "angular": "^1.5.0",
@@ -63,12 +63,13 @@
   "keywords": [
     "angular",
     "webpack",
-    "es6"
+    "es6",
+    "bootstrap"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/angularclass/NG6-starter.git"
+    "url": "https://github.com/desenvolvedorexpert/angular-bootstrap.git"
   },
-  "author": "AngularClass",
-  "license": "Apache-2.0"
+  "author": "@milesibastos",
+  "license": "MIT"
 }
