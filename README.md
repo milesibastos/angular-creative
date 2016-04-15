@@ -1,4 +1,4 @@
-# Angular Bootstrap [![Gitter](https://badges.gitter.im/desenvolvedorexpert/angular-bootstrap.svg)](https://gitter.im/desenvolvedorexpert/angular-bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+# Angular Bootstrap [![Gitter](https://badges.gitter.im/desenvolvedorexpert/angular-bootstrap.svg)](https://gitter.im/desenvolvedorexpert/angular-bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge) [![Build Status](https://snap-ci.com/desenvolvedorexpert/angular-bootstrap/branch/master/build_image)](https://snap-ci.com/desenvolvedorexpert/angular-bootstrap/branch/master)
 > The de facto starter repo for building scalable apps with [Angular](https://angularjs.org), [ES6](https://git.io/es6features), and [Webpack](http://webpack.github.io/)
 
 This repo serves as a minimal starter for those looking to get up-and-running with Angular and ES6, using [Gulp](http://gulpjs.com/) and [Webpack](http://webpack.github.io/) for the build process.
