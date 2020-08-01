@@ -10,7 +10,7 @@
     "angulartics-google-analytics": "^0.1.4",
     "bootstrap-sass": "^3.3.6",
     "jquery": "^2.2.3",
-    "lodash": "^3.8.0",
+    "lodash": "^4.17.19",
     "normalize.css": "^3.0.3"
   },
   "devDependencies": {
